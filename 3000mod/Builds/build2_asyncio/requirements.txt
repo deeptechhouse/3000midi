@@ -1,0 +1,5 @@
+pyserial>=3.5
+pyserial-asyncio>=0.6
+PyYAML>=6.0
+pytest>=7.0.0
+pytest-asyncio>=0.21.0

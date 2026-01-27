@@ -1,0 +1,28 @@
+input:
+  prodjlink:
+    interface: "eth0"
+    port: 50001
+    buffer_size: 512
+
+output:
+  midi:
+    enabled: true
+    device: "/dev/ttyAMA0"
+    baud_rate: 31250
+    ppqn: 24
+    latency_compensation_ms: 3.0
+
+  control_chain:
+    enabled: true
+    device: "/dev/ttyUSB0"
+    baud_rate: 115200
+    gpio_de_pin: 27
+
+timing:
+  enable_pll: true
+  jitter_threshold_ms: 2.0
+
+logging:
+  level: "INFO"
+  file: "/var/log/cdj_sync_bridge.log"
+  log_beat_events: false
